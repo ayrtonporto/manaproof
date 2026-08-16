@@ -241,18 +241,80 @@ a   { color: var(--teal); text-decoration: none; }
 .cta--catalog { background: var(--teal); color: var(--bg); border-color: var(--teal); }
 .cta--catalog:hover { background: var(--teal-bright); box-shadow: var(--glow); transform: translateY(-2px); }
 
-/* WhatsApp — green outline */
-.cta--whatsapp {
-  background: rgba(37, 211, 102, 0.1);
-  color: var(--green-wp);
-  border-color: rgba(37, 211, 102, 0.35);
+/* ── Botón dividido: Notion / Mercado Libre ──────────────── */
+.cta-group { display: flex; flex-direction: column; gap: 8px; }
+
+.cta-group__label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--teal);
+  letter-spacing: 0.12em;
+  opacity: 0.75;
+  text-align: left;
+  padding-left: 2px;
 }
-.cta--whatsapp:hover {
-  background: rgba(37, 211, 102, 0.18);
-  border-color: rgba(37, 211, 102, 0.65);
-  box-shadow: 0 0 24px rgba(37, 211, 102, 0.22);
+
+.cta-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--teal-border);
+}
+
+.cta-split__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 14px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all var(--tr);
+}
+
+.cta-split__icon { display: flex; align-items: center; flex-shrink: 0; }
+.cta-split__text { white-space: nowrap; }
+
+/* Notion — claro */
+.cta-split__btn--notion {
+  background: #f4f2ec;
+  color: #1a1a1a;
+  border-right: 1px solid rgba(0,0,0,0.12);
+}
+.cta-split__btn--notion:hover { background: #ffffff; }
+
+/* Mercado Libre — amarillo de marca */
+.cta-split__btn--ml {
+  background: #ffe600;
+  color: #2d3277;
+}
+.cta-split__btn--ml:hover { background: #ffef4d; }
+
+.cta-split:hover { border-color: var(--teal); box-shadow: var(--glow); }
+
+/* Instagram — degradé de marca */
+.cta--instagram {
+  color: #fff;
+  border-color: transparent;
+  background:
+    linear-gradient(var(--bg), var(--bg)) padding-box,
+    linear-gradient(95deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5) border-box;
+  border: 1px solid transparent;
+}
+.cta--instagram .cta__text,
+.cta--instagram .cta__arrow { color: var(--text-bright); }
+.cta--instagram:hover {
+  background:
+    linear-gradient(95deg, rgba(214,41,118,0.16), rgba(150,47,191,0.16)) padding-box,
+    linear-gradient(95deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5) border-box;
+  box-shadow: 0 0 24px rgba(214, 41, 118, 0.25);
   transform: translateY(-2px);
 }
+.cta--instagram:hover .cta__text { color: #fff; }
 
 /* Info — ghost */
 .cta--info { background: transparent; color: var(--text-bright); border-color: var(--teal-border); }

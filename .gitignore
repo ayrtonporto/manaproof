@@ -10,3 +10,18 @@ desktop.ini
 
 # Logs
 *.log
+
+# ─────────────────────────────────────────────────────────────
+# Assets: solo se versiona lo que usa la landing page.
+# Todo lo demás dentro de Imagenes/ queda ignorado (fotos de
+# stock, capturas de WhatsApp, imágenes de trabajo, carpeta
+# Fisicas con el inventario completo, etc.).
+# ─────────────────────────────────────────────────────────────
+Imagenes/*
+!Imagenes/logo.jpeg
+!Imagenes/monitor-retro.png
+!Imagenes/fotos_mazos/
+Imagenes/fotos_mazos/*
+!Imagenes/fotos_mazos/Kolodin Vehiculos.jpg
+!Imagenes/fotos_mazos/Sigarda Auras.jpg
+!Imagenes/fotos_mazos/Gisa and Geralf Zombies 4.jpg
