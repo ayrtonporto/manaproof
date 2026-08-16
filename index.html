@@ -41,43 +41,66 @@
 
     <div class="hero__proof">
       <div class="proof-badge">
-        <span class="proof-badge__num">178</span>
+        <span class="proof-badge__num">+250</span>
         <span class="proof-badge__label">mazos vendidos</span>
       </div>
     </div>
 
     <nav class="hero__ctas" aria-label="Acciones principales">
 
-      <a
-        href="https://app.notion.com/p/2e59b356a689809a88f4e90aa9572e4d?v=579c2251b3c14b15bab79d676dcf662c"
-        class="cta cta--catalog"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="cta__icon" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-          </svg>
-        </span>
-        <span class="cta__text">Ver mazos disponibles</span>
-        <span class="cta__arrow" aria-hidden="true">→</span>
-      </a>
+      <!-- Ver mazos disponibles: botón dividido Notion / Mercado Libre -->
+      <div class="cta-group">
+        <span class="cta-group__label">Ver mazos disponibles en</span>
+        <div class="cta-split">
 
+          <a
+            href="https://app.notion.com/p/2e59b356a689809a88f4e90aa9572e4d?v=579c2251b3c14b15bab79d676dcf662c"
+            class="cta-split__btn cta-split__btn--notion"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="cta-split__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.933.14-.933.933zm14.337.7c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952l1.448.327s0 .84-1.168.84l-3.222.186c-.093-.187 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.14c-.093-.514.28-.887.747-.933z"/>
+              </svg>
+            </span>
+            <span class="cta-split__text">Notion</span>
+          </a>
+
+          <a
+            href="https://www.mercadolibre.com.ar/pagina/manaproof"
+            class="cta-split__btn cta-split__btn--ml"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="cta-split__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2d3277" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
+                <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25H21"/>
+                <path d="m21 3 1 11h-2"/>
+                <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>
+                <path d="M3 4h8"/>
+              </svg>
+            </span>
+            <span class="cta-split__text">Mercado Libre</span>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Instagram -->
       <a
-        href="https://wa.me/5492262510113?text=Hola%21%20Quiero%20sumarme%20a%20la%20lista%20de%20mazos%20nuevos"
-        class="cta cta--whatsapp"
+        href="https://www.instagram.com/manapr00f/"
+        class="cta cta--instagram"
         target="_blank"
         rel="noopener noreferrer"
       >
         <span class="cta__icon" aria-hidden="true">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
           </svg>
         </span>
-        <span class="cta__text">Sumate a la lista de novedades</span>
+        <span class="cta__text">Seguinos en Instagram</span>
         <span class="cta__arrow" aria-hidden="true">→</span>
       </a>
 
@@ -185,12 +208,12 @@
 
     <div class="decks-grid">
 
-      <!-- ── MAZO 1: Gavi, Nest Warden — Cycling ── -->
+      <!-- ── MAZO 1: Kolodin, Triumph Caster — Vehículos ── -->
       <article class="deck-card">
         <div class="deck-card__img-wrap">
           <img
-            src="Imagenes/fotos_mazos/Yusri.jpg"
-            alt="Gavi, Nest Warden — Cycling"
+            src="Imagenes/fotos_mazos/Kolodin%20Vehiculos.jpg"
+            alt="Kolodin, Triumph Caster — Vehículos"
             class="deck-card__img"
             loading="lazy"
           >
@@ -203,15 +226,14 @@
         </div>
         <div class="deck-card__info">
           <div class="deck-card__colors">
-            <span class="mana mana-w" title="Blanco"></span>
-            <span class="mana mana-u" title="Azul"></span>
             <span class="mana mana-r" title="Rojo"></span>
+            <span class="mana mana-w" title="Blanco"></span>
           </div>
-          <h3 class="deck-card__name">Gavi, Nest Warden</h3>
-          <p class="deck-card__archetype">Cycling Storm</p>
-          <div class="deck-card__price">$40.000 <span class="deck-card__price-currency">ARS</span></div>
+          <h3 class="deck-card__name">Kolodin, Triumph Caster</h3>
+          <p class="deck-card__archetype">Vehículos</p>
+          <div class="deck-card__price">$44.000 <span class="deck-card__price-currency">ARS</span></div>
           <a
-            href="https://wa.me/5492262510113?text=Hola%21%20Me%20interesa%20el%20mazo%20de%20Gavi%20Cycling"
+            href="https://wa.me/5492262510113?text=Hola%21%20Me%20interesa%20el%20mazo%20de%20Kolodin%20Veh%C3%ADculos"
             class="deck-card__btn"
             target="_blank"
             rel="noopener noreferrer"
@@ -221,12 +243,12 @@
         </div>
       </article>
 
-      <!-- ── MAZO 2: Teysa Karlov — DTBs ── -->
+      <!-- ── MAZO 2: Sigarda, Host of Herons — Auras ── -->
       <article class="deck-card">
         <div class="deck-card__img-wrap">
           <img
-            src="Imagenes/fotos_mazos/Gisa%20and%20Geralf.jpg"
-            alt="Teysa Karlov — DTBs"
+            src="Imagenes/fotos_mazos/Sigarda%20Auras.jpg"
+            alt="Sigarda, Host of Herons — Auras"
             class="deck-card__img"
             loading="lazy"
           >
@@ -239,49 +261,49 @@
         </div>
         <div class="deck-card__info">
           <div class="deck-card__colors">
+            <span class="mana mana-g" title="Verde"></span>
             <span class="mana mana-w" title="Blanco"></span>
+          </div>
+          <h3 class="deck-card__name">Sigarda, Host of Herons</h3>
+          <p class="deck-card__archetype">Auras</p>
+          <div class="deck-card__price">$47.000 <span class="deck-card__price-currency">ARS</span></div>
+          <a
+            href="https://wa.me/5492262510113?text=Hola%21%20Me%20interesa%20el%20mazo%20de%20Sigarda%20Auras"
+            class="deck-card__btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Consultar →
+          </a>
+        </div>
+      </article>
+
+      <!-- ── MAZO 3: Gisa and Geralf — Zombies ── -->
+      <article class="deck-card">
+        <div class="deck-card__img-wrap">
+          <img
+            src="Imagenes/fotos_mazos/Gisa%20and%20Geralf%20Zombies%204.jpg"
+            alt="Gisa and Geralf — Zombies"
+            class="deck-card__img"
+            loading="lazy"
+          >
+          <div class="deck-card__placeholder" aria-hidden="true">
+            <svg class="deck-card__placeholder-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <span class="deck-card__placeholder-text">FOTO DEL MAZO</span>
+          </div>
+        </div>
+        <div class="deck-card__info">
+          <div class="deck-card__colors">
+            <span class="mana mana-u" title="Azul"></span>
             <span class="mana mana-b" title="Negro"></span>
           </div>
-          <h3 class="deck-card__name">Teysa Karlov</h3>
-          <p class="deck-card__archetype">Death Triggers / Aristocrats</p>
-          <div class="deck-card__price">$40.000 <span class="deck-card__price-currency">ARS</span></div>
+          <h3 class="deck-card__name">Gisa and Geralf</h3>
+          <p class="deck-card__archetype">Zombies</p>
+          <div class="deck-card__price">$50.000 <span class="deck-card__price-currency">ARS</span></div>
           <a
-            href="https://wa.me/5492262510113?text=Hola%21%20Me%20interesa%20el%20mazo%20de%20Teysa%20Karlov%20DTBs"
-            class="deck-card__btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Consultar →
-          </a>
-        </div>
-      </article>
-
-      <!-- ── MAZO 3: Hakbal of the Surging Soul — Merfolks ── -->
-      <article class="deck-card">
-        <div class="deck-card__img-wrap">
-          <img
-            src="Imagenes/fotos_mazos/Miirym.jpg"
-            alt="Hakbal of the Surging Soul — Merfolks"
-            class="deck-card__img"
-            loading="lazy"
-          >
-          <div class="deck-card__placeholder" aria-hidden="true">
-            <svg class="deck-card__placeholder-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
-            </svg>
-            <span class="deck-card__placeholder-text">FOTO DEL MAZO</span>
-          </div>
-        </div>
-        <div class="deck-card__info">
-          <div class="deck-card__colors">
-            <span class="mana mana-u" title="Azul"></span>
-            <span class="mana mana-g" title="Verde"></span>
-          </div>
-          <h3 class="deck-card__name">Hakbal of the Surging Soul</h3>
-          <p class="deck-card__archetype">Explore Merfolks</p>
-          <div class="deck-card__price">$40.000 <span class="deck-card__price-currency">ARS</span></div>
-          <a
-            href="https://wa.me/5492262510113?text=Hola%21%20Me%20interesa%20el%20mazo%20de%20Hakbal%20Merfolks"
+            href="https://wa.me/5492262510113?text=Hola%21%20Me%20interesa%20el%20mazo%20de%20Gisa%20and%20Geralf%20Zombies"
             class="deck-card__btn"
             target="_blank"
             rel="noopener noreferrer"
